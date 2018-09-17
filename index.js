@@ -6,3 +6,12 @@ function showNumbers(limit) {
     console.log(i, message);
   }
 }
+
+//COMPARE VALUES OF NUMBERS
+
+function compareNumbers(value1, value2) {
+  if (typeof value1 || typeof value2 !== "number") return "NaN";
+  else return value1 === value2 ? "Jinx!!" : value2 > value1 ? true : false;
+}
+
+console.log(compareNumbers("hi", 5));
